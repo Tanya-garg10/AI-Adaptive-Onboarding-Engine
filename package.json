@@ -3,13 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "tsx backend/server.ts",
-    "build": "vite build -c frontend/vite.config.ts",
+    "build": "npm install --include=dev && vite build -c frontend/vite.config.ts",
     "preview": "vite preview -c frontend/vite.config.ts",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit -p frontend/tsconfig.json",
-    "start": "node backend/server.ts"
+    "start": "tsx backend/server.ts"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
@@ -26,6 +29,8 @@
     "pdf-parse": "^2.4.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
     "vite": "^6.2.0"
   },
   "devDependencies": {
@@ -35,9 +40,6 @@
     "@types/node": "^22.14.0",
     "@types/pdf-parse": "^1.1.5",
     "autoprefixer": "^10.4.21",
-    "tailwindcss": "^4.1.14",
-    "tsx": "^4.21.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "tailwindcss": "^4.1.14"
   }
 }
