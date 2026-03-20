@@ -1,0 +1,5 @@
+{
+  "name": "AI-Adaptive Onboarding Engine",
+  "description": "An AI-powered system that analyzes resumes against job descriptions to identify skill gaps and generate personalized learning roadmaps.",
+  "requestFramePermissions": []
+}

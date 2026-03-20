@@ -1,0 +1,8 @@
+# Python dependencies (if any)
+# This project primarily uses Node.js
+pdf-parse
+google-generativeai
+express
+multer
+cors
+dotenv
